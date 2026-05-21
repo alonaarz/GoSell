@@ -15,8 +15,11 @@ pipeline {
             steps {
                 sh """
                     cd ${PROJECT_DIR}
-                    git reset --hard
-                    git pull origin main
+                    # Оновлюємо інформацію про гілки з GitHub
+                    git fetch origin main
+                    
+                    # Жорстко синхронізуємо локальну папку з GitHub, видаляючи будь-яку розбіжність в історії
+                    git reset --hard origin/main
                 """
             }
         }
