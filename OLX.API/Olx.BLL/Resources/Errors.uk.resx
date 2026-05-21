@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="JwtSettingsReadError" xml:space="preserve">
+    <value>Помилка читання JWT налаштувань</value>
+  </data>
+  <data name="ImageSizesReadError" xml:space="preserve">
+    <value>Помилка читання розмірів зображення</value>
+  </data>
+  <data name="ImageSizesInitError" xml:space="preserve">
+    <value>Розміри зображень не ініціалізовані</value>
+  </data>
+  <data name="InvalidLoginData" xml:space="preserve">
+    <value>Невірний логін або пароль</value>
+  </data>
+  <data name="InvalidToken" xml:space="preserve">
+    <value>Невірний токен</value>
+  </data>
+  <data name="InvalidConfirmationData" xml:space="preserve">
+    <value>Помилка даних підтвердження</value>
+  </data>
+  <data name="InvalidResetPasswordData" xml:space="preserve">
+    <value>Помилка даних при зміні паролю</value>
+  </data>
+  <data name="UserCreateError" xml:space="preserve">
+    <value>Помилка створення користувача</value>
+  </data>
+  <data name="InvalidUserEmail" xml:space="preserve">
+    <value>Невірна електронна пошта користувача</value>
+  </data>
+  <data name="UserRemoveError" xml:space="preserve">
+    <value>Помилка видалення користувача</value>
+  </data>
+  <data name="ActionBlocked" xml:space="preserve">
+    <value>Дія заблокована</value>
+  </data>
+  <data name="InvalidUserId" xml:space="preserve">
+    <value>Не вірний ідентифікатор користувача</value>
+  </data>
+  <data name="InvalidAdminMessageId" xml:space="preserve">
+    <value>Не вірний ідентифікатор повідомлення адміністратора</value>
+  </data>
+  <data name="InvalidFilterCreationModelData" xml:space="preserve">
+    <value>Помилка даних створення фільтру</value>
+  </data>
+  <data name="InvalidFilterValueId" xml:space="preserve">
+    <value>Невірний ідентифікатор значення фільтру</value>
+  </data>
+  <data name="InvalidFilterId" xml:space="preserve">
+    <value>Невірний ідентифікатор фільтру</value>
+  </data>
+  <data name="InvalidCategoryId" xml:space="preserve">
+    <value>Невірний ідентифікатор категорії</value>
+  </data>
+  <data name="InvalidAdvertId" xml:space="preserve">
+    <value>Невірний ідентифікатор оголошення</value>
+  </data>
+  <data name="ErrorAthorizedUser" xml:space="preserve">
+    <value>Помилка авторизації користувача</value>
+  </data>
+  <data name="CurrentPasswordIsNotValid" xml:space="preserve">
+    <value>Невірний поточний пароль</value>
+  </data>
+  <data name="InvalidChatId" xml:space="preserve">
+    <value>Невірний шдентифікатор чату </value>
+  </data>
+  <data name="AdvertIsBlocked" xml:space="preserve">
+    <value>Оголошення заблоковане</value>
+  </data>
+  <data name="InvalidSettlementId" xml:space="preserve">
+    <value>Невірний ідетифікатор населеного пункту</value>
+  </data>
+  <data name="NewPostRequestError" xml:space="preserve">
+    <value>Помилка запиту Нової Пошти</value>
+  </data>
+  <data name="NewPostDataUpdateError" xml:space="preserve">
+    <value>Помилка оновлення даних Нової пошти</value>
+  </data>
+  <data name="InvalidSettlementRef" xml:space="preserve">
+    <value>Невірний REF населеного пункту</value>
+  </data>
+  <data name="InvalidRegionRef" xml:space="preserve">
+    <value>Невірний REF району</value>
+  </data>
+  <data name="InvalidAreaRef" xml:space="preserve">
+    <value>Невірний REF області</value>
+  </data>
+  <data name="EmailAlreadyExist" xml:space="preserve">
+    <value>Акаунт за цією поштою вже існує</value>
+  </data>
+  <data name="ReCapthcaValidationError" xml:space="preserve">
+    <value>Запит не пройшов reCapthca валідацію</value>
+  </data>
+  <data name="InvalidRole" xml:space="preserve">
+    <value>Невірне ім'я ролі</value>
+  </data>
+  <data name="InvalidLockedOperation" xml:space="preserve">
+    <value>Юзер вже має даний статус блокування</value>
+  </data>
+  <data name="InvalidParentCategoryId" xml:space="preserve">
+    <value>Невірний ідентифікатор батьківської категорії</value>
+  </data>
+  <data name="MultipleRefresh" xml:space="preserve">
+    <value>Спроба багаторазового оновлення refresh token</value>
+  </data>
+  <data name="InvalidChatMessegesIds" xml:space="preserve">
+    <value>Невірні ідентифікатори повідомлень чату</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>Не вірно введений пароль</value>
+  </data>
+  <data name="LastAdminDeleteBlock" xml:space="preserve">
+    <value>Відмова у видаленні акаунту.</value>
+  </data>
+  <data name="EmptyAdvertIds" xml:space="preserve">
+    <value>Пуста колекція ідентифікаторів аголошень</value>
+  </data>
+  <data name="NoValidAdverts" xml:space="preserve">
+    <value>Оголошення не знайдені</value>
+  </data>
+  <data name="ErrorStarPGDump" xml:space="preserve">
+    <value>Не вдалося запустити процес pg_dump.</value>
+  </data>
+  <data name="BackupCreatinError" xml:space="preserve">
+    <value>Помилка при створенні бекапу: {0}</value>
+  </data>
+  <data name="ErrorStartPGRestore" xml:space="preserve">
+    <value>Не вдалося запустити процесс pg_restore.</value>
+  </data>
+  <data name="DataBaseRestoreError" xml:space="preserve">
+    <value>Помилка при відновленні бази даних: {0}</value>
+  </data>
+  <data name="ErrorRestoreDataBase" xml:space="preserve">
+    <value>Помилка при відновленні бази даних: {0}</value>
+  </data>
+  <data name="InvalidBackupFileName" xml:space="preserve">
+    <value>Не вірне ім'я файлу резервної копії </value>
+  </data>
+  <data name="ErrorOpenBackupFile" xml:space="preserve">
+    <value>Помилка при відкритті файлу резервної копії</value>
+  </data>
+</root>

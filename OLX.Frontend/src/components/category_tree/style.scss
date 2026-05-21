@@ -1,0 +1,56 @@
+ .custom-scrollbar {
+
+     /* При наведенні змінюється колір */
+     &::-webkit-scrollbar-thumb:hover {
+         background: #b69779;
+     }
+
+     /* Колір бігунка (самого повзунка) */
+     &::-webkit-scrollbar-thumb {
+         background: #9B7A5B;
+         /* Синій AntD */
+         border-radius: 4px;
+     }
+
+     /* Колір доріжки (фон скролбару) */
+     &::-webkit-scrollbar-track {
+         background: rgb(0, 0, 0, 0.05);
+         border-radius: 4px;
+     }
+
+     &::-webkit-scrollbar {
+         height: 4px;
+         width: 4px;
+         /* Товщина скролбару */
+     }
+ }
+
+ .custom-cascader {
+     .ant-select-selector {
+         padding: 0 !important;
+     }
+
+     .ant-select-arrow {
+         inset-inline-end: 0
+     }
+ }
+
+ .ant-cascader-menus {
+     .ant-cascader-menu {
+         height: auto;
+         max-height: 50vh;
+         overflow: auto;
+         @extend .custom-scrollbar; // Застосовуємо стиль custom-scrollbar всередині .custom-cascader
+
+         .ant-cascader-menu-item-active {
+             background-color: #b69779;
+             color: white
+         }
+
+         .ant-cascader-menu-item-active .anticon-right {
+             color: black !important;
+             font-weight: 500;
+         }
+
+     }
+ }

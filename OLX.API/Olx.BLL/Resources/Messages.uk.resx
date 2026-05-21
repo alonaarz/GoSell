@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccountDeleted" xml:space="preserve">
+    <value>Ваш акаунт було видалено адміністратором сайту</value>
+  </data>
+  <data name="AccountLocked" xml:space="preserve">
+    <value>Ваш обліковий запис заблокований.</value>
+  </data>
+  <data name="AccountRemoved" xml:space="preserve">
+    <value>Ваш акаунт видалено</value>
+  </data>
+  <data name="AccountUnlocked" xml:space="preserve">
+    <value>Ваш обліковий запис розблоковано.</value>
+  </data>
+  <data name="AdminDeleteAdvert" xml:space="preserve">
+    <value>Адміністратор видалив ваше оголошення "{0}".</value>
+  </data>
+  <data name="AdminLockAdvert" xml:space="preserve">
+    <value>Адміністратор заблокував ваше оголошення "{0}"</value>
+  </data>
+  <data name="AdvertDeleted" xml:space="preserve">
+    <value>Вашe оголошення видалено</value>
+  </data>
+  <data name="AdvertDeletedDefault" xml:space="preserve">
+    <value>За порушення правил та не відповідності що до політикі сайту.</value>
+  </data>
+  <data name="AdvertInFavorites" xml:space="preserve">
+    <value>Ваше оголошення було додане в обрані</value>
+  </data>
+  <data name="AdvertLocked" xml:space="preserve">
+    <value>Вашe оголошення заблоковано</value>
+  </data>
+  <data name="AreasCount" xml:space="preserve">
+    <value>Областей - {0}</value>
+  </data>
+  <data name="AreasUpdate" xml:space="preserve">
+    <value>Оновлення областей ...</value>
+  </data>
+  <data name="BackupCreated" xml:space="preserve">
+    <value>Резервна копія успішно створена</value>
+  </data>
+  <data name="BackupStart" xml:space="preserve">
+    <value>Старт створення резервної копії</value>
+  </data>
+  <data name="DataBaseUpdateSucceeded" xml:space="preserve">
+    <value>База даних успішно відновлена!</value>
+  </data>
+  <data name="EmailConfirmation" xml:space="preserve">
+    <value>Підтвердження електронної пошти</value>
+  </data>
+  <data name="EmailNotConfirmed" xml:space="preserve">
+    <value>Ваша пошта не підтверджена. Перевірте email для підтвердження.</value>
+  </data>
+  <data name="FailedLoginAttempts" xml:space="preserve">
+    <value>Ваш обліковий запис заблоковано через надто багато невірних спроб входу</value>
+  </data>
+  <data name="Indefinitely" xml:space="preserve">
+    <value>На невизначений термін</value>
+  </data>
+  <data name="LockedUntil" xml:space="preserve">
+    <value>Заблокований до</value>
+  </data>
+  <data name="NPUpdateCompleted" xml:space="preserve">
+    <value>Інформвція Нової Пошти успішно оновлена</value>
+  </data>
+  <data name="reCaptchaValidationError" xml:space="preserve">
+    <value>reCAPTHCA перевірку не пройдено</value>
+  </data>
+  <data name="RegionsCount" xml:space="preserve">
+    <value>Райони - {0}</value>
+  </data>
+  <data name="RegionsUpdate" xml:space="preserve">
+    <value>Оновлення районів ...</value>
+  </data>
+  <data name="SettlemensUpdate" xml:space="preserve">
+    <value>Оновлення населених пунктів ....</value>
+  </data>
+  <data name="SettlementsCount" xml:space="preserve">
+    <value>Населені пункти - {0}</value>
+  </data>
+  <data name="UserAddedToFavorites" xml:space="preserve">
+    <value>Користувач "{0}" додав ваше оголошення "{1}" в обрані</value>
+  </data>
+  <data name="UserBoughtAdvert" xml:space="preserve">
+    <value>Користувач "{0}" купив ваше оголошення  "{1}"</value>
+  </data>
+  <data name="UserBouth" xml:space="preserve">
+    <value>Ваше оголшення було куплене</value>
+  </data>
+</root>

@@ -1,0 +1,60 @@
+#!groovy
+
+pipeline {
+    agent { label 'Agent001' }
+
+    environment {
+        IMAGE_NAME_API = "alonaarz/gosell_back"
+        IMAGE_NAME_FRONT = "alonaarz/gosell_front"
+        PROJECT_DIR = "/home/alonaarz/projects/GoSell"
+    }
+
+    stages {
+
+        stage("Pull latest code") {
+            steps {
+                sh """
+                    cd ${PROJECT_DIR}
+                    git reset --hard
+                    git pull origin main
+                """
+            }
+        }
+
+        stage("Build API image") {
+            steps {
+                sh """
+                    cd ${PROJECT_DIR}/OLX.API
+                    docker build -t ${IMAGE_NAME_API}:${BUILD_NUMBER} -t ${IMAGE_NAME_API}:latest .
+                """
+            }
+        }
+
+        stage("Build Front image") {
+            steps {
+                sh """
+                    cd ${PROJECT_DIR}/OLX.Frontend
+                    docker build -t ${IMAGE_NAME_FRONT}:${BUILD_NUMBER} -t ${IMAGE_NAME_FRONT}:latest .
+                """
+            }
+        }
+
+        stage("Deploy") {
+            steps {
+                sh """
+                    cd ${PROJECT_DIR}
+
+                    # Вказуємо шлях до файлу через прапорець -f
+                    docker compose -f Tools/docker-compose.yml -p gosell down --remove-orphans || true
+
+                    docker rm -f olx_client_container olx_container container-postgres || true
+
+                    # Передаємо тег та запускаємо compose, знову вказуючи шлях до файлу
+                    IMAGE_TAG=${BUILD_NUMBER} docker compose -f Tools/docker-compose.yml -p gosell up -d --build
+
+                    docker image prune -f
+                """
+            }
+        }
+    }
+}
