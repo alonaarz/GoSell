@@ -15,10 +15,7 @@ pipeline {
             steps {
                 sh """
                     cd ${PROJECT_DIR}
-                    # Оновлюємо інформацію про гілки з GitHub
                     git fetch origin main
-                    
-                    # Жорстко синхронізуємо локальну папку з GitHub, видаляючи будь-яку розбіжність в історії
                     git reset --hard origin/main
                 """
             }
@@ -47,14 +44,16 @@ pipeline {
                 sh """
                     cd ${PROJECT_DIR}
 
-                    # Вказуємо шлях до файлу через прапорець -f
+                    # Зупиняємо старі контейнери. Додаємо || true, щоб не падати, якщо проєкту ще не існує
                     docker compose -f Tools/docker-compose.yml -p gosell down --remove-orphans || true
 
+                    # Видаляємо контейнери вручну (тільки якщо вони не описані в docker-compose)
                     docker rm -f olx_client_container olx_container container-postgres || true
 
-                    # Передаємо тег та запускаємо compose, знову вказуючи шлях до файлу
-                    IMAGE_TAG=${BUILD_NUMBER} docker compose -f Tools/docker-compose.yml -p gosell up -d --build
+                    # ЗАПУСК: прибираємо --build, бо ми вже зібрали імиджі вище!
+                    IMAGE_TAG=${BUILD_NUMBER} docker compose -f Tools/docker-compose.yml -p gosell up -d
 
+                    # Очищення застарілих шарів та імиджів після успішного старту
                     docker image prune -f
                 """
             }
